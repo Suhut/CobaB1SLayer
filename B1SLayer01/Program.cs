@@ -28,7 +28,7 @@ await serviceLayer.Request("Items", "Test01").PatchAsync(new { ItemName = "Test0
 await serviceLayer.Request("Items", "Test01").DeleteAsync();
 
 //05 Add new item dengan script engine
-var itemReq05 = new B1SLayer01.ItemModel { ItemCode = "Test02", ItemName = "Test03 Name" };
+var itemReq05 = new B1SLayer01.ItemModel { ItemCode = "Test02", ItemName = "Test02 Name" };
 var itemRes05 = await serviceLayer.Request("script/test/test_items").PostAsync<B1SLayer01.ItemModel>(itemReq05);
 
 //06 Delete Item
